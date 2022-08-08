@@ -65,8 +65,8 @@
     <style name="detailsDateStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text">@string/_2009</item>
-        <item name="android:textColor">@color/grayy</item>
+        <item name="android:text">@string/_2017</item>
+        <item name="android:textColor">@color/white_from_details_screen</item>
         <item name="android:textSize">@dimen/_26sp</item>
         <item name="android:layout_marginStart">@dimen/_20dp</item>
         <item name="layout_constraintStart_toEndOf">@id/poster</item>
@@ -76,8 +76,8 @@
     <style name="detailsGenreStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text">@string/drama_comedy</item>
-        <item name="android:textColor">@color/grayy</item>
+        <item name="android:text">@string/action_comedy</item>
+        <item name="android:textColor">@color/white_from_details_screen</item>
         <item name="android:textSize">@dimen/_26sp</item>
         <item name="android:layout_marginStart">@dimen/_20dp</item>
         <item name="android:layout_marginTop">@dimen/_20dp</item>
@@ -89,8 +89,8 @@
     <style name="detailsScoreStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text">@string/_2_7_10</item>
-        <item name="android:textColor">@color/grayy</item>
+        <item name="android:text">@string/_5_10</item>
+        <item name="android:textColor">@color/white_from_details_screen</item>
         <item name="android:textSize">@dimen/_26sp</item>
         <item name="android:layout_marginStart">@dimen/_20dp</item>
         <item name="android:layout_marginTop">@dimen/_20dp</item>

@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">MoviesApplication</string>
     <string name="title">Title</string>
-    <string name="default_date">18 Dec 2019</string>
+    <string name="default_date">01 Jan 2017</string>
     <string name="_h2_3">H,2:3</string>
     <string name="title_of_the_film">Title of the film</string>
-    <string name="_2009">2009</string>
-    <string name="drama_comedy">Drama, Comedy</string>
+    <string name="_2017">2017</string>
+    <string name="action_comedy">Action, Comedy</string>
     <string name="description">Description</string>
     <string name="cast">Cast</string>
-    <string name="_2_7_10">2.7/10</string>
+    <string name="_5_10">5/10</string>
+    <string name="default_background">Default background</string>
+    <string name="default_poster">Default Poster</string>
 </resources>
