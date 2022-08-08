@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.moviesapplication.R
 import com.example.moviesapplication.databinding.MainScreenLayoutBinding
 import com.example.moviesapplication.domain.Film
+import com.example.moviesapplication.ui.detailsfragment.DetailsFragment
 
 
 class MainScreenFragment : Fragment() {
