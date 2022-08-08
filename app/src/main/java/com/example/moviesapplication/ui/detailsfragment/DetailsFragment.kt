@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.moviesapplication.R
+import com.example.moviesapplication.data.repository.FakeRepo
 import com.example.moviesapplication.databinding.DetailsScreenLayoutBinding
 import com.example.moviesapplication.domain.Film
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
