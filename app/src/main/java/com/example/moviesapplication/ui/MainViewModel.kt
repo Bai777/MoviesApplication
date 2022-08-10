@@ -3,6 +3,7 @@ package com.example.moviesapplication.ui
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.moviesapplication.data.network.Retrofit
 import com.example.moviesapplication.data.repository.RemoteRepositoryImpl
 import com.example.moviesapplication.data.repository.Repository
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers

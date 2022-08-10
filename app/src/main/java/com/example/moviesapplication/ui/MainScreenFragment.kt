@@ -28,7 +28,7 @@ class MainScreenFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = MainScreenLayoutBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -36,6 +36,19 @@ class MainScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewDetailsFragment()
+
+        binding.mainFragmentRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.mainFragmentRecyclerView.adapter = adapter
+
+        val observer = Observer<MainAppState> {
+            renderData(it)
+        }
+        viewModel.getData().observe(viewLifecycleOwner, observer)
+        viewModel.requestFilms()
+    }
+
+    private fun viewDetailsFragment() {
         adapter.setOnItemViewClickListener(object : OnItemViewClickListener {
             override fun onItemViewClick(filmId: Film) {
                 activity?.supportFragmentManager?.apply {
@@ -48,15 +61,6 @@ class MainScreenFragment : Fragment() {
                 }
             }
         })
-
-        binding.mainFragmentRecyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
-        binding.mainFragmentRecyclerView.adapter = adapter
-
-        val observer = Observer<MainAppState> {
-            renderData(it)
-        }
-        viewModel.getData().observe(viewLifecycleOwner, observer)
-        viewModel.requestFilms()
     }
 
     private fun renderData(data: MainAppState) = when (data) {

@@ -13,5 +13,5 @@ interface ApiService {
     fun getFilms(
         @Query("type") type: String = "movies",
         @Query("sort") sort: String = "rating"
-    ): Single<ApiResponse> // @Query добавляет в запрос &id=$id
+    ): Single<ApiResponse>
 }
